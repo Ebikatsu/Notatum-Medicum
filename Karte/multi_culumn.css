@@ -1,86 +1,71 @@
-/** 記事を複数のカラムに分ける・段組み (画像枠付き) -comemo 2016-02-17- **/
-
-
-/* Copyright (c) 2014 katsuhiro fuchinoue / MIT License / https://opensource.org/licenses/mit-license.php（日本語訳 / http://sourceforge.jp/projects/opensource/wiki/licenses143MIT_license）
- *
- *（以下、参考（katsuhiro fuchinoue（ http://comemo508.wordpress.com ）の解釈））
- * 以下の条件を満たす限り、自由な複製・配布・修正を無制限に許可する。
- * ・上記の著作権表示および本許諾表示をソフトウェアのすべての複製または重要な部分に記載しなければならない（変更点を示す必要はない）。
- * ・作者または著作権者は、ソフトウェアに関してなんら責任を負わない。
- */
 /*
  * ページ全体の設定
  */
 body {
     margin: 0;
-padding: 0;
-background-color: #ccffff; /* ページの背景色 */
-color: #000000; /* 全体の文字色 */
-font-size: 100%; /* 全体の文字サイズ */
+    padding: 0;
+    background-color: #ccffff; /* ページの背景色 */
+    color: #000000; /* 全体の文字色 */
+    font-size: 100%; /* 全体の文字サイズ */
 }
 
 /*
  * 枠の設定
  */
 .tablecolumn {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
 }
 
 .tablecolumn > div {
-  display: table-cell;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #003fff;
-
-  /*
-   * border-image: url('https://comemo508.files.wordpress.com/2016/02/thumb_img_0759_1024.jpg?w=200') 50 fill stretch;
-  */
-  
-padding: 0px .7%;
+    display: table-cell;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #003fff;
+    padding: 0px .7%;
 }
 
 .tablecolumn > div h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 @media screen and (max-width: 767px) {
-  .tablecolumn:not(.noresponsive),
-  .tablecolumn:not(.noresponsive) > div {
-    display: block;
-    width: 100%;
-    margin: 1.625em 0;
-  }
+    .tablecolumn:not(.noresponsive),
+    .tablecolumn:not(.noresponsive) > div {
+        display: block;
+        width: 100%;
+        margin: 1.625em 0;
+    }
 }
 
 .tablecolumn .w100 {
-  width: 100%;
-  vertical-align: top;
+    width: 100%;
+    vertical-align: top;
 }
 
 .tablecolumn .w50 {
-  width:50%;
-  vertical-align: top;
+    width:50%;
+    vertical-align: top;
 }
 
 .tablecolumn .w33 {
-  width: 31%;
-  vertical-align: top;
+    width: 31%;
+    vertical-align: top;
 }
 
 .tablecolumn .w25 {
-  vertical-align: top;
-  width: 25%;
+    vertical-align: top;
+    width: 25%;
 }
 
 @media screen and (max-width: 767px) {
-  .tablecolumn:not(.noresponsive) .w50,
-  .tablecolumn:not(.noresponsive) .w33,
-  .tablecolumn:not(.noresponsive) .w25 {
-    width: 100%;
-  }
+    .tablecolumn:not(.noresponsive) .w50,
+    .tablecolumn:not(.noresponsive) .w33,
+    .tablecolumn:not(.noresponsive) .w25 {
+        width: 100%;
+    }
 }
