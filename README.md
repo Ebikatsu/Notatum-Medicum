@@ -251,3 +251,9 @@ test1
 test2
 test3
 ```
+jarファイルをクラスパスに追加しておくと  
+```
+javac DBTest.java
+java DBTest
+```
+で実行することができる。
