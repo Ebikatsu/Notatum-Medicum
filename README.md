@@ -257,3 +257,14 @@ javac DBTest.java
 java DBTest
 ```
 で実行することができる。
+~/.profileの末尾に
+```
+CLASSPATH=.:${CLASSPATH}:jarファイルのパス
+export CLASSPATH
+```
+の2行を追加し、
+```
+source ~/.profile
+```
+を実行することで、それ以後ログイン時に自動的にクラスパスを通すようにできる。  
+
