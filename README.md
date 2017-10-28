@@ -106,6 +106,10 @@ postgreSQLの起動
 ```
 psql
 ```
+postgreSQLの終了
+```
+\q
+```
 postgresからログアウト  
 ```
 exit
@@ -168,7 +172,7 @@ postgreSQLではPeer認証のために名前とパスワードがロールと同
 \q --postgreSQLを終了
 exit #postgresからログアウト
 sudo useradd -m notatummedicum #新しいlinuxのアカウントを作成
-sudo paddwd notatummedicum #パスワードの設定
+sudo passwd notatummedicum #パスワードの設定
 ```
 ### 新しいロールにログイン  
 これで新しいロールを作成することができたので、linuxのアカウントnotatummedicumにログインしてpostgreSQLを起動すると新しいロールnotatummedicumにログインすることができる。  
