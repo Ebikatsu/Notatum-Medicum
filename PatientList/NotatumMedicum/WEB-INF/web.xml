@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+ <welcome-file-list>
+  <welcome-file>view/PatientList.jsp</welcome-file>
+ </welcome-file-list>
+ <servlet>
+  <servlet-name>PatientSearchServlet
+  </servlet-name>
+  <servlet-class>controller.PatientSearchServlet
+  </servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>PatientSearchServlet
+  </servlet-name>
+  <url-pattern>/PatientSearch
+  </url-pattern>
+ </servlet-mapping>
+ <servlet>
+  <servlet-name>ReceptionServlet
+  </servlet-name>
+  <servlet-class>controller.ReceptionServlet
+  </servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>ReceptionServlet
+  </servlet-name>
+  <url-pattern>/Reception
+  </url-pattern>
+ </servlet-mapping>
+</web-app>

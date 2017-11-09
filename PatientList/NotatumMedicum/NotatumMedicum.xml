@@ -1,0 +1,2 @@
+<!-- apache-tomcat-9.0.0.M26/conf/Catalina/localhost/NotatumMedicum.xml -->
+<Context path="/NotatumMedicum" docBase="/home/taisei/git/Assignment/syspj3/NotatumMedicum" reloadable="false"/>
